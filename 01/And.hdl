@@ -1,6 +1,8 @@
-class Main {
- function void main() {
- do Output.printString("Hello World");
- return;
- }
- }
+ CHIP And {
+    IN a,b;
+    OUT out;
+
+    PARTS:
+        Nand(a=a,b=b,out=typ);
+        Nand(a=typ,b=typ,out=out);
+}
